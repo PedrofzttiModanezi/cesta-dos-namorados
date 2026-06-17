@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #fcb5f2, #f4b7fc, #fce7f3);
+    color: #4a1c2a;
+}
+
+header {
+    background-color: #be128c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #881328;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 30px;
+}
+
+.texto-banner {
+    width: 50%;
+}
+
+.texto-banner h2 {
+    font-size: 36px;
+    color: #b8325f;
+    margin-bottom: 15px;
+}
+
+.texto-banner p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.texto-banner button {
+    background-color: #e11d28;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.banner img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border: 2px solid #fecdd3;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #b8325f;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.card span {
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    color: #16a28a;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #e11d28;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #be128c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-banner {
+        width: 100%;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+    }
+}
